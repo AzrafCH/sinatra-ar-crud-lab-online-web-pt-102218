@@ -8,7 +8,10 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-#create
+  get '/articles/:id/edit' do
+    erb :edit
+  end
+
   get 'articles/:id' do
     @article = Article.find(params[:id])
     erb :show
