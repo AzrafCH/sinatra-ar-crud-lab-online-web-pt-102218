@@ -11,9 +11,9 @@ class ApplicationController < Sinatra::Base
 #create
   get 'articles/:id' do
     @article = Article.find(params[:id])
-    erb :show 
+    erb :show
   end
-  
+
   get '/' do
     @articles = Artist.all
     erb :index
