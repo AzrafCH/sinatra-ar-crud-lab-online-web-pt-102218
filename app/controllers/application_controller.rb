@@ -14,9 +14,9 @@ get '/' do
 end
 
 post '/articles' do
+@article = Article.create(params)
 
-
-redirect to '/articles/:id'
+redirect to "/articles/#{@article.id}"
 end
 
 
