@@ -13,6 +13,12 @@ get '/' do
   erb :new
 end
 
+post '/articles' do
+
+
+redirect to '/articles/:id'
+end
+
 
 
 
