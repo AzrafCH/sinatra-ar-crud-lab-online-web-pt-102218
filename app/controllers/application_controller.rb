@@ -11,7 +11,7 @@ class ApplicationController < Sinatra::Base
   get '/' do
     @articles = Artist.all
     erb :index
-  end	  
+  end
 
   get '/articles/new' do
     erb :new
